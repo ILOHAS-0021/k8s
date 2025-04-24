@@ -34,7 +34,7 @@ sudo sysctl --system
 
 # 스왑 비활성화
 sudo swapoff -a
-sudo sed -i '/ swap / s/^/#/' /etc/fstab
+sudo sed -i '/swap/s/^/#/' /etc/fstab
 
 # Docker repository 추가
 curl -fsSL https://download.docker.com/linux/ubuntu/gpg | sudo apt-key add -
