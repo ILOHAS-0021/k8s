@@ -2,13 +2,13 @@
 set -e
 
 # 시스템 패키지 업데이트 및 net-tools 설치
-sudo apt-get update -y
-sudo apt-get install -y net-tools
+#sudo apt-get update -y
+#sudo apt-get install -y net-tools
 
 # Docker 설치
-curl -fsSL https://get.docker.com -o get-docker.sh
-chmod +x get-docker.sh
-sudo ./get-docker.sh
+#curl -fsSL https://get.docker.com -o get-docker.sh
+#chmod +x get-docker.sh
+#sudo ./get-docker.sh
 
 # 방화벽 비활성화
 sudo ufw disable
