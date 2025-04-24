@@ -2,9 +2,9 @@
 set -e
 
 # Docker 설치
-#curl -fsSL https://get.docker.com -o get-docker.sh
-#chmod +x get-docker.sh
-#./get-docker.sh
+curl -fsSL https://get.docker.com -o get-docker.sh
+chmod +x get-docker.sh
+./get-docker.sh
 
 # 방화벽 비활성화
 ufw disable
