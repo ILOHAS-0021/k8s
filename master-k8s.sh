@@ -50,4 +50,8 @@ metadata:
   namespace: metallb-system
 EOF
 
+echo "[Step 8] Applying MetalLB config..."
 kubectl apply -f config-metallb.yml
+
+echo "[Complete] Kubernetes cluster with Flannel and MetalLB is ready!"
+
