@@ -1,6 +1,10 @@
 #!/bin/bash
 set -e
 
+# 시스템 패키지 업데이트 및 net-tools 설치
+apt-get update -y
+apt-get install -y net-tools
+
 # Docker 설치
 curl -fsSL https://get.docker.com -o get-docker.sh
 chmod +x get-docker.sh
@@ -57,4 +61,3 @@ apt-get install -y kubelet kubeadm kubectl
 apt-mark hold kubelet kubeadm kubectl
 systemctl restart kubelet
 systemctl enable kubelet
-
